@@ -12,8 +12,10 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 from pathlib import Path
 import os
-from dotenv import load_dotenv
 import dj_database_url
+
+from dotenv import load_dotenv
+
 load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -84,7 +86,7 @@ DATABASES = {
     }
 }
 database_uri = os.environ.get("DATABASE_URL")
-DATABASES['default'] = dj_database_url.parse(database_uri)
+DATABASES['default'] = "postgres://remindapp_h1jw_user:giiY70FyEDU5kqKZQDS9AxiJYBgH7iyX@dpg-cmthes6ct0pc73el8e1g-a.oregon-postgres.render.com/remindapp_h1jw"
 
 
 # Password validation

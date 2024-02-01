@@ -86,7 +86,7 @@ DATABASES = {
     }
 }
 database_uri = os.environ.get("DATABASE_URL")
-DATABASES['default'] = dj_database_url.parse(database_uri)
+DATABASES['default'] = 'postgres://remindapp_h1jw_user:giiY70FyEDU5kqKZQDS9AxiJYBgH7iyX@dpg-cmthes6ct0pc73el8e1g-a.oregon-postgres.render.com/remindapp_h1jw'
 
 
 # Password validation
